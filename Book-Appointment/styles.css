@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Slab&family=Ubuntu&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #f5f5f5; 
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.btn {
+  padding: 6px 12px;
+  background: #0077b5; 
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 20px;
+  color: #ffffff; 
+  transition: background-color 0.3s;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: #005a8c; 
+}
+
+.popup {
+  width: 320px;
+  background: #ffffff; 
+  border-radius: 8px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 20px;
+  color: #333; 
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.popup img {
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  color: #0077b5; 
+}
+
+.popup p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.popup-btn {
+  width: 100%;
+  padding: 10px 0;
+  background: #0077b5; 
+  color: #ffffff; 
+  border: 0;
+  outline: none;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.popup-btn:hover {
+  background-color: #005a8c; 
+}
+
+.popup h2.congratulations {
+  color: #0077b5; 
+}
+
+.popup-btn.booked {
+  background: #0077b5; 
+  color: #ffffff; 
+}
+
+.popup-btn.booked:hover {
+  background-color: #005a8c; 
+}

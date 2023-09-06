@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Pop-Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <button type="button" class="btn" onclick="openPopup('appointment')">Book Appointment</button>
+        <div class="popup" id="popup">
+            <img src="images\Blue-tick.png" alt="Blue Tick">
+            <h2>Congratulations!</h2>
+            <p id="popup-message">Your appointment has been successfully booked.</p>
+            <button type="button" class="popup-btn" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup(type) {
+            popup.classList.add("open-popup");
+            if (type === 'appointment') {
+                document.querySelector('#popup-message').innerText = "Your appointment has been successfully booked.";
+            }
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+</body>
+</html>
